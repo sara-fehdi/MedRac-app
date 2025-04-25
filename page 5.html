@@ -16,55 +16,44 @@
     <script src="script.js"></script>
 </head>
 <body>
-  <header class="top-bar">
-    <h1>Med Rec</h1>
-    <nav>
-      <span class="menu-icon">&#9776;</span>
-      <span class="menu-title">Main Menu</span>
-    </nav>
-  </header>
+    <header class="top-bar">
+        <h1>Med Rec</h1>
+        <nav>
+            <span class="menu-icon">&#9776;</span>
+            <span class="menu-title">Main Menu</span>
+        </nav>
+    </header>
 
-  <div class="categories">
-    <button class="category active">General medicine</button>
-    <button class="category">Dermatology</button>
-    <button class="category">Ophthalmology</button>
-  </div>
+    <div class="categories">
+        <button class="category active" onclick="location.href='general.html'">General medicine</button>
+        <button class="category" onclick="location.href='dermatology.html'">Dermatology</button>
+        <button class="category" onclick="location.href='ophthalmology.html'">Ophthalmology</button>
+    </div>
 
-  <main class="content">
-    <section class="card-wrapper">
-      <a class="card" href="page6.html">
-        <h2>Health condition</h2>
-        <p>Sep 12 – 15</p>
-      </a>
-    </section>
+    <main class="content">
+        <section class="card" onclick="location.href='page6.html'">
+            <h2>Health condition</h2>
+            <p>Sep 12 – 15</p>
+        </section>
+        <section class="card" onclick="location.href='page6.html'">
+            <h2>Health condition</h2>
+            <p>Sep 12 – 15</p>
+        </section>
+        <section class="card" onclick="location.href='page6.html'">
+            <h2>Health condition</h2>
+            <p>Sep 12 – 15</p>
+        </section>
+        <section class="card" onclick="location.href='page6.html'">
+            <h2>Health condition</h2>
+            <p>Sep 12 – 15</p>
+        </section>
+    </main>
 
-    <section class="card-wrapper">
-      <a class="card" href="page6.html">
-        <h2>Health condition</h2>
-        <p>Sep 12 – 15</p>
-      </a>
-    </section>
-
-    <section class="card-wrapper">
-      <a class="card" href="page6.html">
-        <h2>Health condition</h2>
-        <p>Sep 12 – 15</p>
-      </a>
-    </section>
-
-    <section class="card-wrapper">
-      <a class="card" href="page6.html">
-        <h2>Health condition</h2>
-        <p>Sep 12 – 15</p>
-      </a>
-    </section>
-  </main>
-
-  <footer class="bottom-nav">
-    <button><img src="home-icon.png" alt="Home"></button>
-    <button><img src="add-icon.png" alt="Add"></button>
-    <button><img src="search-icon.png" alt="Search"></button>
-    <button><img src="user-icon.png" alt="Profile"></button>
-  </footer>
+    <footer class="bottom-nav">
+        <button><i class="fa-solid fa-house"></i></button>
+        <button><i class="fa-regular fa-square-plus"></i></button>
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button><i class="fa-regular fa-user"></i></button>
+    </footer>
 </body>
 </html>
