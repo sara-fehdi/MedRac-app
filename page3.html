@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MedRec</title>
-    <meta name="description" content="تطبيق لإدارة السجلات الطبية يساعد الأطباء والمراكز الطبية في تتبع بيانات المرضى، التاريخ المرضي، والتقارير الطبية بسهولة وفعالية.">
-    <meta name="keywords" content="سجلات طبية, تطبيق طبي, إدارة المرضى, تقارير طبية, ملف طبي, الصحة الرقمية, العيادات, المستشفيات, تطبيق إلكتروني, نظام صحي">
+    <title>MedRec - Sign Up</title>
+    <meta name="description" content="صفحة تسجيل مستخدم جديد في تطبيق MedRec لإدارة السجلات الطبية.">
+    <meta name="keywords" content="تسجيل, مستخدم جديد, سجلات طبية, تطبيق طبي">
     <meta name="author" content="MedRec">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,32 +13,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <script src="script.js"></script>
 </head>
 <body>
-    <h3>Sign up</h3>
 
-    <form>
-        <fieldset>
-            <div>
-                <label for="user">Username</label><br>
-                <input id="user" type="text" required>
-            </div>
-            <div>
-                <label for="email">E-mail address</label><br>
-                <input id="email" type="email" required>
-            </div>
-            <div>
-                <label for="pass">Password</label><br>
-                <input id="pass" type="password" required>
-            </div>
-            <div>
-                <label for="confirm-pass">Confirm password</label><br>
-                <input id="confirm-pass" type="password" required>
-            </div>
-            <br>
-            <input type="submit" value="Sign up">
-        </fieldset>
-    </form>
+    <div class="container">
+        <div class="header">
+            <h3>Sign up</h3>
+        </div>
+
+        <form>
+            <fieldset>
+
+                <div class="form-group">
+                    <label for="user">Username</label><br>
+                    <input id="user" type="text" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail address</label><br>
+                    <input id="email" type="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pass">Password</label><br>
+                    <input id="pass" type="password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-pass">Confirm password</label><br>
+                    <input id="confirm-pass" type="password" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Sign up">
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
 </body>
 </html>
