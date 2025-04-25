@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MedRec </title>
+    <meta name="description" content="تطبيق لإدارة السجلات الطبية يساعد الأطباء والمراكز الطبية في تتبع بيانات المرضى، التاريخ المرضي، والتقارير الطبية بسهولة وفعالية.">
+    <meta name="keywords" content="سجلات طبية, تطبيق طبي, إدارة المرضى, تقارير طبية, ملف طبي, الصحة الرقمية, العيادات, المستشفيات, تطبيق إلكتروني, نظام صحي">
+    <meta name="author" content="MedRec">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+  <header class="top-bar">
+    <h1>Med Rec</h1>
+    <nav>
+      <span class="menu-icon">&#9776;</span>
+      <span class="menu-title">Main Menu</span>
+    </nav>
+  </header>
+
+  <div class="categories">
+    <button class="category active">General medicine</button>
+    <button class="category">Dermatology</button>
+    <button class="category">Ophthalmology</button>
+  </div>
+
+  <main class="content">
+    <section class="card-wrapper">
+      <a class="card" href="page6.html">
+        <h2>Health condition</h2>
+        <p>Sep 12 – 15</p>
+      </a>
+    </section>
+
+    <section class="card-wrapper">
+      <a class="card" href="page6.html">
+        <h2>Health condition</h2>
+        <p>Sep 12 – 15</p>
+      </a>
+    </section>
+
+    <section class="card-wrapper">
+      <a class="card" href="page6.html">
+        <h2>Health condition</h2>
+        <p>Sep 12 – 15</p>
+      </a>
+    </section>
+
+    <section class="card-wrapper">
+      <a class="card" href="page6.html">
+        <h2>Health condition</h2>
+        <p>Sep 12 – 15</p>
+      </a>
+    </section>
+  </main>
+
+  <footer class="bottom-nav">
+    <button><img src="home-icon.png" alt="Home"></button>
+    <button><img src="add-icon.png" alt="Add"></button>
+    <button><img src="search-icon.png" alt="Search"></button>
+    <button><img src="user-icon.png" alt="Profile"></button>
+  </footer>
+</body>
+</html>
