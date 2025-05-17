@@ -1,1 +1,406 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Inria+Sans:700,400");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+.iphone {
+  background-color: #C9E2F6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.iphone .div {
+  background-color: white;
+  overflow: hidden;
+  width: 393px;
+  height: 852px;
+  position: relative;
+}
+
+.iphone .overlap-group {
+  position: absolute;
+  width: 393px;
+  height: 732px;
+  top: 137px;
+  left: 0;
+  background-image: url(https://c.animaapp.com/ma7ao7k9lw6XCM/img/rectangle-1.svg);
+  background-size: 100% 100%;
+}
+
+.iphone .rectangle {
+  top: 106px;
+  left: 20px;
+  position: absolute;
+  width: 329px;
+  height: 60px;
+}
+.overlap {
+  position: absolute;
+  width: 350px;
+  height: 65px;
+  top: 517px;
+  left: 18px;
+  background-color: #F0F3FA; 
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-wrapper {
+  background-color: transparent;
+  border: none;
+  font-family: "Inria Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #395886;
+  cursor: pointer;
+}
+/*
+.iphone .overlap {
+  position: absolute;
+  width: 358px;
+  height: 73px;
+  top: 517px;
+  left: 18px;
+  background-image: url(https://c.animaapp.com/ma7ao7k9lw6XCM/img/rectangle-5.png);
+  background-size: 100% 100%;
+}
+
+.iphone .text-wrapper {
+  position: absolute;
+  top: 8px;
+  left: 105px;
+  font-family: "Inria Sans", Helvetica;
+  font-weight: 700;
+  color: #395886;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+*/
+.iphone .text-wrapper-2 {
+  position: absolute;
+  top: 365px;
+  left: 35px;
+  font-family: "Inria Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.iphone .overlap-2 {
+  position: absolute;
+  width: 329px;
+  height: 83px;
+  top: 213px;
+  left: 22px;
+}
+
+.iphone .text-wrapper-3 {
+  position: absolute;
+  top: 52px;
+  left: 14px;
+  font-family: "Inria Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.iphone .img {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 329px;
+  height: 60px;
+}
+
+.iphone .text-wrapper-4 {
+  position: absolute;
+  top: 54px;
+  left: 38px;
+  font-family: "Inria Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.iphone .text-wrapper-5 {
+  position: absolute;
+  top: 174px;
+  left: 36px;
+  font-family: "Inria Sans", Helvetica;
+  font-weight: 400;
+  color: #f0f3fa;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.iphone .rectangle-2 {
+  top: 301px;
+  left: 22px;
+  position: absolute;
+  width: 329px;
+  height: 60px;
+}
+
+.iphone .rectangle-3 {
+  top: 402px;
+  left: 22px;
+  position: absolute;
+  width: 329px;
+  height: 60px;
+}.iphone .text-wrapper-6 {
+  position: absolute;
+  top: 42px;
+  left: 108px;
+  font-family: "Inria Sans", Helvetica;
+  font-weight: 700;
+  color: #395886;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.input-field {
+  width: 329px;
+  height: 60px;
+  border: 2px solid #F0F3FA;
+  border-radius: 20px;
+  background-color: #395886;
+  color: white;
+  padding: 12px 16px;
+  font-size: 18px;
+  outline: none;
+  font-family: "Inria Sans", sans-serif;
+}.rectangle {
+  width: 321px;
+
+height: 52px;
+  position: absolute;
+  top: 243px;
+  left: 26px;
+  border-radius: 20px;
+  background-color: #395886;
+  border: 2px solid #F0F3FA;
+  padding: 12px 16px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+.img {
+  width: 321px;
+  height: 52px;
+  position: absolute;
+  top: 0px;
+  left: 26px;
+  border-radius: 20px;
+  background-color: #395886;
+  border: 2px solid #f0f3fa;
+  padding: 12px 16px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+.rectangle-2 {
+  width: 321px;
+  height: 52px;
+  position: absolute;
+  top: 438px;
+  left: 26px;
+  border-radius: 20px;
+  background-color: #395886;
+  border: 2px solid #F0F3FA;
+  padding: 12px 16px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+.rectangle-3 {
+  width: 321px;
+  height: 52px;
+  position: absolute;
+  top: 539px;
+  left: 26px;
+  border-radius: 20px;
+  background-color: #395886;
+  border: 2px solid #F0F3FA;
+  padding: 12px 16px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Inria+Sans:700,400");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+.iphone {
+  background-color: #C9E2F6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.iphone .div {
+  background-color: white;
+  overflow: hidden;
+  width: 393px;
+  height: 852px;
+  position: relative;
+}
+
+.iphone .overlap-group {
+  position: absolute;
+  width: 393px;
+  height: 732px;
+  top: 137px;
+  left: 0;
+  background-image: url(https://c.animaapp.com/ma7ao7k9lw6XCM/img/rectangle-1.svg);
+  background-size: 100% 100%;
+}
+
+.iphone .rectangle {
+  top: 106px;
+  left: 20px;
+  position: absolute;
+  width: 329px;
+  height: 60px;
+}
+.overlap {
+  position: absolute;
+  width: 350px;
+  height: 65px;
+  top: 517px;
+  left: 18px;
+  background-color: #F0F3FA; 
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-wrapper {
+  background-color: transparent;
+  border: none;
+  font-family: "Inria Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #395886;
+  cursor: pointer;
+}
+/*
+.iphone .overlap {
+  position: absolute;
+  width: 358px;
+  height: 73px;
+  top: 517px;
+  left: 18px;
+  background-image: url(https://c.animaapp.com/ma7ao7k9lw6XCM/img/rectangle-5.png);
+  background-size: 100% 100%;
+}
+
+.iphone .text-wrapper {
+  position: absolute;
+  top: 8px;
+  left: 105px;
+  font-family: "Inria Sans", Helvetica;
+  font-weight: 700;
+  color: #395886;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+*/
+.iphone .text-wrapper-2 {
+  position: absolute;
+  top: 365px;
+  left: 35px;
+  font-family: "Inria Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.iphone .overlap-2 {
+  position: absolute;
+  width: 329px;
+  height: 83px;
+  top: 213px;
+  left: 22px;
+}
+
+.iphone .text-wrapper-3 {
+  position: absolute;
+  top: 52px;
+  left: 14px;
+  font-family: "Inria Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+.custom-msg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 2px 8px; /* ✅ تصغير الطول والجهات الجانبية قليلاً */
+  border-radius: 4px;
+  font-family: "Inria Sans", sans-serif;
+  font-size: 13px;
+  color: red;
+  text-align: center;
+  pointer-events: none;
+  z-index: 10;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
 
