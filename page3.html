@@ -1,56 +1,139 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MedRec - Sign Up</title>
-    <meta name="description" content="صفحة تسجيل مستخدم جديد في تطبيق MedRec لإدارة السجلات الطبية.">
-    <meta name="keywords" content="تسجيل, مستخدم جديد, سجلات طبية, تطبيق طبي">
-    <meta name="author" content="MedRec">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MedRec</title>
+  <meta name="description" content="تطبيق لإدارة السجلات الطبية يساعد الأطباء والمراكز الطبية في تتبع بيانات المرضى، التاريخ المرضي، والتقارير الطبية بسهولة وفعالية.">
+  <meta name="keywords" content="سجلات طبية, تطبيق طبي, إدارة المرضى, تقارير طبية, ملف طبي, الصحة الرقمية, العيادات, المستشفيات, تطبيق إلكتروني, نظام صحي">
+  <meta name="author" content="MedRec">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sgu.css">
+<style>
+  .custom-msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white; /* ✅ إطار أبيض */
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 14px;
+    color: red;
+    text-align: center;
+    pointer-events: none;
+    z-index: 10;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1); /* ظل خفيف */
+  }
+</style>
+
 </head>
 <body>
-
-    <div class="container">
-        <div class="header">
-            <h3>Sign up</h3>
-        </div>
-
-        <form>
-            <fieldset>
-
-                <div class="form-group">
-                    <label for="user">Username</label><br>
-                    <input id="user" type="text" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">E-mail address</label><br>
-                    <input id="email" type="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="pass">Password</label><br>
-                    <input id="pass" type="password" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="confirm-pass">Confirm password</label><br>
-                    <input id="confirm-pass" type="password" required>
-                </div>
-
-                <div class="form-group">
-                    <input type="submit" value="Sign up">
-                </div>
-
-            </fieldset>
+  <div class="iphone">
+    <div class="div">
+      <div class="overlap-group">
+        <form action="p4.html" method="get">
+          <input class="rectangle" type="text" placeholder="User name" name="username" required/>
+          <div class="overlap">
+            <button type="submit" class="text-wrapper">sign up</button>
+          </div>
+          <div class="text-wrapper-2">Confirm password</div>
+          <div class="overlap-2">
+            <div class="text-wrapper-3">Password</div>
+            <input class="img" type="text" placeholder="Code" name="code" required/>
+          </div>
+          <div class="text-wrapper-4">Username</div>
+          <div class="text-wrapper-5">Code</div>
+          <input class="rectangle-2" type="password" placeholder="password" name="password" required/>
+          <input class="rectangle-3" type="text" placeholder="Confirm password" name="confirm_password" required/>
         </form>
+      </div>
+      <div class="text-wrapper-6">sign up</div>
     </div>
+  </div>
 
+  <!-- JavaScript مباشرة داخل HTML -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const usernameInput = document.querySelector("input[name='username']");
+      const passwordInput = document.querySelector("input[name='password']");
+      const confirmPasswordInput = document.querySelector("input[name='confirm_password']");
+
+      const takenUsernames = [
+        "ben_alla",
+        "Ouissal_daha",
+        "sara_fehdi",
+        "Khanour_Ikram",
+        "Mehalli_Meriem",
+        "ben_zoukh_siham"
+      ];
+
+      function showMessage(input, message, color = "red", timeout = null) {
+        clearMessage(input);
+        const msg = document.createElement("div");
+        msg.textContent = message;
+        msg.style.position = "absolute";
+        msg.style.top = "50%";
+        msg.style.left = "50%";
+        msg.style.transform = "translate(-50%, -50%)";
+        msg.style.color = color;
+        msg.style.fontSize = "14px";
+        msg.style.pointerEvents = "none";
+        msg.classList.add("custom-msg");
+        input.parentNode.appendChild(msg);
+
+        if (timeout) {
+          setTimeout(() => {
+            msg.remove();
+          }, timeout);
+        }
+      }
+
+      function clearMessage(input) {
+        const msg = input.parentNode.querySelector(".custom-msg");
+        if (msg) msg.remove();
+      }
+
+      usernameInput.addEventListener("input", function () {
+        const value = this.value.trim();
+        clearMessage(this);
+
+        if (takenUsernames.includes(value)) {
+          showMessage(this, "This username is already taken");
+        } else if (/[^a-zA-Z0-9]/.test(value)) {
+          showMessage(this, "This username is invalid");
+        } else if (value.length > 0 && value.length < 7) {
+          showMessage(this, "Username must have at least 7 characters");
+        } else if (value.length >= 7) {
+          showMessage(this, "Is available", "green", 5000);
+        }
+      });
+usernameInput.addEventListener("focus", function () {
+        if (this.value.trim() === "") clearMessage(this);
+      });
+
+      passwordInput.addEventListener("focus", function () {
+        showMessage(this, "Use signs like @ to ensure password security.", "gray", 3000);
+      });
+
+      passwordInput.addEventListener("input", function () {
+        clearMessage(this);
+        if (this.value.length > 0 && this.value.length < 8) {
+          showMessage(this, "Error, Password must have at least 7 characters");
+        }
+      });
+
+      confirmPasswordInput.addEventListener("input", function () {
+        clearMessage(this);
+        if (this.value !== passwordInput.value && this.value !== "") {
+          showMessage(this, "Not the same password");
+        }
+      });
+    });
+  </script>
 </body>
 </html>
