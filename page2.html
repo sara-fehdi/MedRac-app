@@ -1,53 +1,144 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MedRec</title>
-    <meta name="description" content="تطبيق لإدارة السجلات الطبية يساعد الأطباء والمراكز الطبية في تتبع بيانات المرضى، التاريخ المرضي، والتقارير الطبية بسهولة وفعالية.">
-    <meta name="keywords" content="سجلات طبية, تطبيق طبي, إدارة المرضى, تقارير طبية, ملف طبي, الصحة الرقمية, العيادات, المستشفيات, تطبيق إلكتروني, نظام صحي">
-    <meta name="author" content="MedRec">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedRec</title>
+  <meta name="description" content="تطبيق لإدارة السجلات الطبية يساعد الأطباء والمراكز الطبية في تتبع بيانات المرضى، التاريخ المرضي، والتقارير الطبية بسهولة وفعالية.">
+  <meta name="keywords" content="سجلات طبية, تطبيق طبي, إدارة المرضى, تقارير طبية, ملف طبي, الصحة الرقمية, العيادات, المستشفيات, تطبيق إلكتروني, نظام صحي">
+  <meta name="author" content="MedRec">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="gs.css">
+  
+  <style>
+    .error-message {
+      color: red;
+      font-size: 18px;
+      display: none;
+      position: absolute;
+      top: 400px; /* تم تعديل المسافة من الأعلى */
+      left: 30px;
+      font-family: "Inria Sans", sans-serif;
+    }
+    .account-not-exist {
+      color: red;
+      font-size: 18px;
+      display: none;
+      position: absolute;
+      top: 400px; /* تم تعديل المسافة من الأعلى */
+      left: 30px;
+      font-family: "Inria Sans", sans-serif;
+    }
+  </style>
 </head>
 <body>
-
-    <div class="container">
-        <div class="header">
-            <h3>Get started</h3>
+  <div class="iphone">
+    <div class="div">
+      <div class="overlap">
+        <div class="overlap-group">
+          <div class="overlap-2">
+            <div class="overlap-3">
+              <a href="p4.html" class="login-button">log in</a>
+            </div>
+            <a href="p3.html" class="sign-up-button">sign up</a>
+          </div>
+          <div class="text-wrapper-3">Don’t have an account?</div>
         </div>
 
-        <form>
-            <fieldset>
-                <div class="form-group">
-                    <label for="email">E-mail address</label><br>
-                    <input id="email" type="email" required>
-                </div>
+        <label id="username-label" for="username">Username</label>
+        <input type="text" id="username" class="input-field" name="username" required />
 
-                <div class="form-group">
-                    <label for="pass">Password</label><br>
-                    <input id="pass" type="password" required>
-                </div>
+        <label id="password-label" for="password">Password</label>
+        <div class="password-container">
+          <input type="password" id="password" class="input-field" name="password" required />
+          <i class="fa-solid fa-eye eye-icon"></i>
+        </div>
 
-                <div class="form-group">
-                    <label for="cod">Code</label><br>
-                    <input id="cod" type="text" required>
-                </div>
+        <label id="code-label" for="code">Code</label>
+        <input type="text" id="code" class="input-field" name="code" required />
 
-                <div class="form-group">
-                    <input type="submit" value="log in"> 
-                </div>
+        <div class="error-message" id="error-message">
+          Error, there is an error in one of the Info
+        </div>
+        <div class="account-not-exist" id="account-not-exist">
+          This account does not exist
+        </div>
+      </div>
 
-                <div class="signup-link">
-                    <p>Don't have an account? <a href="page3.html">sign up</a></p>
-                </div>
-            </fieldset>  
-        </form>
+      <div class="overlap-group-2">
+        <div class="text-wrapper-7">Get started</div>
+      </div>
     </div>
+  </div>
 
+  <script>
+    const users = [
+      { username: 'ben_alla', password: 'All00a', code: '20044' },
+      { username: 'Ouissal_daha', password: 'ouissa00l', code: '20045' },
+      { username: 'sara_fehdi', password: 'sar00a', code: '20046' },
+      { username: 'Khanour_Ikram', password: 'ikra00m', code: '20047' },
+      { username: 'Mehalli_Meriem', password: 'merie00m', code: '20048' },
+      { username: 'ben_zoukh_siham', password: 'siha00m', code: '20049' }
+    ];
+
+    const usernameInput = document.getElementById('username');
+    const passwordInput = document.getElementById('password');
+    const codeInput = document.getElementById('code');
+    const errorMessage = document.getElementById('error-message');
+    const accountNotExist = document.getElementById('account-not-exist');
+
+    function validateUser() {
+      const username = usernameInput.value;
+      const password = passwordInput.value;
+      const code = codeInput.value;
+
+      const user = users.find(user => user.username === username);
+
+      if (!user) {
+        // إذا كان الحساب غير موجود
+        accountNotExist.style.display = 'block';
+        errorMessage.style.display = 'none';
+        return;
+      }
+
+      // إذا كان الحساب موجودًا نتحقق من باقي البيانات
+      if (user.username === username && user.code === code && user.password === password) {
+        // بيانات صحيحة، يتم الانتقال إلى الصفحة التالية
+        window.location.href = "nextpage.html"; // استبدل "nextpage.html" بالصفحة المطلوبة
+        errorMessage.style.display = 'none';
+        accountNotExist.style.display = 'none';
+      } else {
+        // إذا كانت أي من البيانات غير صحيحة
+        errorMessage.style.display = 'block';
+        accountNotExist.style.display = 'none';
+      }
+    }
+
+    // الاستماع لأحداث الإدخال والتأكد من صحة البيانات عند التغيير
+    usernameInput.addEventListener('input', () => {
+      errorMessage.style.display = 'none';
+      accountNotExist.style.display = 'none';
+    });
+
+    passwordInput.addEventListener('input', () => {
+      errorMessage.style.display = 'none';
+      accountNotExist.style.display = 'none';
+    });
+
+    codeInput.addEventListener('input', () => {
+      errorMessage.style.display = 'none';
+      accountNotExist.style.display = 'none';
+    });
+
+    // عند الضغط على الزر أو التغيير في الحقول
+    document.querySelector('.login-button').addEventListener('click', (event) => {
+      event.preventDefault(); // لمنع تنفيذ الإجراء الافتراضي
+      validateUser();
+    });
+  </script>
 </body>
 </html>
