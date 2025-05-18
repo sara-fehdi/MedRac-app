@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MedRec</title>
+    <title> MedRec </title>
     <meta name="description" content="تطبيق لإدارة السجلات الطبية يساعد الأطباء والمراكز الطبية في تتبع بيانات المرضى، التاريخ المرضي، والتقارير الطبية بسهولة وفعالية.">
     <meta name="keywords" content="سجلات طبية, تطبيق طبي, إدارة المرضى, تقارير طبية, ملف طبي, الصحة الرقمية, العيادات, المستشفيات, تطبيق إلكتروني, نظام صحي">
     <meta name="author" content="MedRec">
@@ -11,13 +11,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="p1.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Med Rec</h1>
-            <p>Health record _</p>
+    <div class="iphone">
+        <div class="med-rec-logo-wrapper">
+            <img class="med-rec-logo" src="https://c.animaapp.com/mau1vpn1hAZrCb/img/med-rec-logo--2---1--1.png" 
+                 onclick="goToNextPage()" 
+                 alt="شعار MedRec" />
         </div>
-    </header>
+    </div>
+
+    <script>
+        function goToNextPage() {
+           
+            window.location.href = "page2.html";
+         
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.addEventListener('click', function() {
+                window.location.href = "p2.html";
+            });
+        });
+    </script>
 </body>
 </html>
