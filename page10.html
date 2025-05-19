@@ -1,1 +1,135 @@
 
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedRec</title>
+  <meta name="description" content="تطبيق لإدارة السجلات الطبية يساعد الأطباء والمراكز الطبية في تتبع بيانات المرضى، التاريخ المرضي، والتقارير الطبية بسهولة وفعالية.">
+  <meta name="keywords" content="سجلات طبية, تطبيق طبي, إدارة المرضى, تقارير طبية, ملف طبي, الصحة الرقمية, العيادات, المستشفيات, تطبيق إلكتروني, نظام صحي">
+  <meta name="author" content="MedRec">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="p10.css" />
+</head>
+<body>
+  <div class="iphone">
+    <div class="div">
+      <div class="overlap">
+        <div class="overlap-group">
+          <div class="text"></div>
+          <img class="rectangle" src="https://c.animaapp.com/ma8rpcv438gDxr/img/rectangle-1.svg" />
+          <a href="bake.html">
+            <img class="arrow-down" src="https://c.animaapp.com/ma8pn14w3tb8ov/img/arrow-down-1.svg" />
+          </a>
+          <div class="text-wrapper">Health condition</div>
+        </div>
+        <div class="overlap-2">
+          <div class="rectangle-2"></div>
+          <img class="polygon" src="https://c.animaapp.com/ma8rpcv438gDxr/img/polygon-1.svg" />
+          <select class="text-wrapper-2">
+            <option selected>Category</option>
+            <option>Health</option>
+            <option>Medication</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="line"></div>
+      <div class="img"></div>
+      <div class="line-2"></div>
+      <div class="line-3"></div>
+      <div class="line-4"></div>
+
+  
+      <div class="file-text-outline-wrapper">
+        <div class="file-text-outline">
+          <label for="file-upload-1" style="display: flex; align-items: center; cursor: pointer;">
+            <svg class="group" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 2V8H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 13H8" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 17H8" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 9H9H8" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span style="margin-left: 8px;"></span>
+          </label>
+          <input type="file" id="file-upload-1" style="display: none;">
+        </div>
+      </div>
+
+<div class="div-wrapper">
+        <div class="file-text-outline-2">
+          <label for="file-upload-2" style="display: flex; align-items: center; cursor: pointer;">
+            <svg class="group" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V8H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 13H8" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 17H8" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 9H9H8" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span style="margin-left: 8px;"></span>
+          </label>
+          <input type="file" id="file-upload-2" style="display: none;">
+        </div>
+      </div>
+
+      <!-- التاريخ -->
+      <div class="overlap-3">
+        <input type="date" class="text-wrapper-3" />
+      </div>
+
+      <!-- أيقونة إدخال ملف 3 -->
+      <div class="overlap-4">
+        <div class="file-text-outline-3">
+          <label for="file-upload-3" style="display: flex; align-items: center; cursor: pointer;">
+            <svg class="group" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 2V8H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 13H8" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 17H8" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 9H9H8" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span style="margin-left: 8px;"></span>
+          </label>
+          <input type="file" id="file-upload-3" style="display: none;">
+        </div>
+      </div>
+
+      <div class="plus-wrapper">
+       <div class="note-container">
+  <!-- زر الزائد (الظاهر دائماً) -->
+  <button id="plusBtn" class="plus-button">+</button>
+  
+  <!-- حقل الإدخال (مخفي في البداية) -->
+  <div class="input-container" id="inputContainer">
+    <input type="text" id="noteInput" placeholder="Enter a note">
+    <button id="saveBtn">حفظ</button>
+  </div>
+</div>
+          <script>document.getElementById('plusBtn').addEventListener('click', function() {
+  const inputContainer = document.getElementById('inputContainer');
+  inputContainer.style.display = 'flex';
+  document.getElementById('noteInput').focus();
+});
+
+document.getElementById('saveBtn').addEventListener('click', function() {
+  const noteInput = document.getElementById('noteInput');
+  if(noteInput.value.trim() !== '') {
+    alert('تم حفظ الملاحظة: ' + noteInput.value);
+    document.getElementById('inputContainer').style.display = 'none';
+    noteInput.value = '';
+  }
+});</script>
+      </div>
+
+      <div class="text-wrapper-4">Note</div>
+      <div class="text-wrapper-5">Date</div>
+      <div class="text-wrapper-6">Medications</div>
+      <div class="text-wrapper-7">doctor visite</div>
+      <div class="text-wrapper-8">Medical documents</div>
+    </div>
+  </div>
+</body>
+</html>
